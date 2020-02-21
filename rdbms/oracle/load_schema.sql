@@ -1,5 +1,4 @@
-
-REM ********************************************************************
+REM 1********************************************************************
 REM Create the REGIONS table to hold region information for locations
 REM HR.LOCATIONS table has a foreign key to this table.
        
@@ -18,7 +17,7 @@ ALTER TABLE regions
    PRIMARY KEY (region_id)
    ) ;
 
-REM ********************************************************************
+REM 20********************************************************************
 REM Create the COUNTRIES table to hold country information for customers
 REM and company locations. 
 REM OE.CUSTOMERS table and HR.LOCATIONS have a foreign key to this table.
@@ -40,7 +39,7 @@ ALTER TABLE countries
    REFERENCES regions(region_id) 
    ) ;
 
-REM ********************************************************************
+REM 42********************************************************************
 REM Create the LOCATIONS table to hold address information for company departments.
 REM HR.DEPARTMENTS has a foreign key to this table.
        
